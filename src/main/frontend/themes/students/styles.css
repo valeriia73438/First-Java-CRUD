@@ -1,0 +1,18 @@
+html {
+  --lumo-primary-color: #3558c8;
+  --lumo-primary-text-color: #2849b5;
+  --lumo-base-color: #ffffff;
+  --lumo-body-text-color: #233049;
+  background: #f4f6fb;
+}
+.student-page {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 28px;
+  gap: 18px;
+}
+.student-page h1 { margin: 0; font-size: clamp(1.7rem, 4vw, 2.5rem); }
+.student-page h2 { margin: 0; font-size: 1.2rem; }
+.student-page p { margin: 0; color: #626e84; }
+.editor { background: white; border: 1px solid #e1e5ef; border-radius: 12px; padding: 24px; }
+@media (max-width: 600px) { .student-page { margin: 0; padding: 16px; } }
