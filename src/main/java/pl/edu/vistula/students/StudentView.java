@@ -62,7 +62,8 @@ public class StudentView extends VerticalLayout {
         Button save = new Button("Save", event -> save());
         save.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         delete.addThemeVariants(ButtonVariant.LUMO_ERROR);
-        VerticalLayout editor = new VerticalLayout(formTitle, form, new HorizontalLayout(save, delete));
+        Button clear = new Button("Clear form", event -> edit(null));
+        VerticalLayout editor = new VerticalLayout(formTitle, form, new HorizontalLayout(save, delete, clear));
         editor.addClassName("editor");
         add(add, grid, editor);
         refresh();
