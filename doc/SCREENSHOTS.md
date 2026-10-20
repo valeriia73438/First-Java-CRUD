@@ -15,10 +15,8 @@ Move the resulting PNG into this directory with the names below.
 
 Also check that an empty form and an invalid email cannot be saved, and that Cancel
 in the delete dialog preserves the record. Do not include credentials or private browser tabs.
-Actual screenshots captured during implementation are listed in VERIFICATION.md.
 
 - [x] `08-validation.jpg`: genuine empty-form validation errors.
 
 The automated browser captures are JPEG files. The terminal screenshot remains manual
-because computer-use access to Terminal was denied. Actual startup output is saved
-in `startup-output.txt`; successful test output is saved in `test-output.txt`.
+because computer-use access to Terminal was denied. Capture it using the checklist above.

@@ -64,5 +64,4 @@ owner review checklist, and reciprocal contribution instructions.
 The partner must make their own change and commit it using their own account.
 Their work is not included in the initial implementation.
 
-See [SCREENSHOTS.md](doc/SCREENSHOTS.md) for screenshot evidence and
-[VERIFICATION.md](doc/VERIFICATION.md) for the actual checks performed and remaining steps.
+See [SCREENSHOTS.md](doc/SCREENSHOTS.md) for screenshot evidence and the remaining screenshot checklist.

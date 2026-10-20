@@ -89,7 +89,7 @@ Do not claim this step is done before an actual PR exists.
 
 ## Evidence to fill in after real collaboration
 
-- Initial owner push: complete; GitHub links the initial commits to valeriia73438 (see VERIFICATION.md).
+- Initial owner push: complete; GitHub links the initial commits to valeriia73438.
 - Partner PR URL: pending.
 - Owner review and merge: pending.
 - Both GitHub author links verified on main: pending.
