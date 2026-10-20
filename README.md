@@ -5,7 +5,7 @@ A small Java web application for adding, viewing, editing, and deleting student 
 
 ## Technologies
 
-Java 21, Spring Boot 3.5.16, Vaadin 24.9.24, Spring Data JPA, H2, and Maven 3.9.11 (Wrapper).
+Java 21, Spring Boot 3.5.16, Vaadin 24.9.2, Spring Data JPA, H2, and Maven 3.9.11 (Wrapper).
 The structure follows the [Spring CRUD with Vaadin guide](https://spring.io/guides/gs/crud-with-vaadin/).
 
 ## Run on macOS
