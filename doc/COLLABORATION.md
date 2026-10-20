@@ -99,5 +99,5 @@ Checked on GitHub on 20 October 2026:
   whether the owner performed the manual review checks above.
 - Both GitHub author links verified on main: complete; GitHub links the initial owner
   commits to `valeriia73438` and the Clear form commit to `73952id`.
-- Commit-history screenshot: pending.
+- Commit-history screenshot: saved in `doc/07-github-both-contributors.png`; supplied by the owner.
 - Owner PR to partner repository: complete; the exit confirmation PR linked above is merged.

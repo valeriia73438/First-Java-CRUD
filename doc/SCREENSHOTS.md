@@ -10,8 +10,8 @@ Move the resulting PNG into this directory with the names below.
 - [x] `04-update.jpg`: select the temporary student, change Course, save, and capture the updated row.
 - [x] `05-delete.jpg`: capture the confirmation dialog; confirm deletion and optionally add `05-delete-result.jpg` (captured).
 - [ ] `06-startup-logs.png`: show the actual terminal containing the successful Spring Boot startup and port 8080.
-- [ ] `07-github-both-contributors.png`: after the partner PR is reviewed and merged, open
-  https://github.com/valeriia73438/First-Java-CRUD/commits/main/ and capture both account-linked authors.
+- [x] `07-github-both-contributors.png`: supplied screenshot of the main branch history
+  showing commits by both valeriia73438 and 73952id after the partner PR was merged.
 
 Also check that an empty form and an invalid email cannot be saved, and that Cancel
 in the delete dialog preserves the record. Do not include credentials or private browser tabs.
