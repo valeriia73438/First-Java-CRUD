@@ -1,0 +1,97 @@
+# Two-student collaboration
+
+Repository: https://github.com/valeriia73438/First-Java-CRUD
+
+| Student | GitHub account | Commit email supplied by the student |
+| --- | --- | --- |
+| Owner | valeriia73438 | work0372@gmail.com |
+| Partner | 73952id | mliuten1@stu.vistula.edu.pl |
+
+Each student must work through their own GitHub account. An email in a Git commit alone
+is not proof of account attribution: GitHub must associate it with the student's account.
+Do not use co-author trailers or change the owner checkout's identity to simulate teamwork.
+
+## Task for 73952id: Clear form button
+
+This task is intentionally left unimplemented for the partner.
+
+Add a **Clear form** button beside Save and Delete in `StudentView.java`.
+It must clear all four inputs, deselect any row, switch the heading to Add student,
+and disable Delete. It must not save or delete a database record.
+Use the existing `edit(null)` method, and follow the existing button style.
+
+Acceptance checks:
+
+1. Select an existing student and change the course without saving.
+2. Click Clear form. Inputs must be empty, no row selected, and Delete disabled.
+3. Select the same student again. The original course must still be present.
+4. Run `./mvnw clean test` and capture a genuine screenshot of the new button.
+5. Describe the change and manual checks in the PR.
+
+## Partner: branch and Pull Request
+
+The owner can invite 73952id through repository Settings → Collaborators.
+If direct push access is unavailable, the partner should fork the repository in their own account.
+First wait until the owner has pushed the initial application to main.
+
+In the partner's own clone only:
+
+```sh
+git clone https://github.com/valeriia73438/First-Java-CRUD.git
+cd First-Java-CRUD
+git config --local user.name 73952id
+git config --local user.email mliuten1@stu.vistula.edu.pl
+git switch -c codex/clear-student-form
+# The partner now implements and checks the task themselves.
+./mvnw clean test
+git add src/main/java/pl/edu/vistula/students/StudentView.java doc/
+git commit -m "Add Clear form button to student editor"
+git push -u origin codex/clear-student-form
+```
+
+For a fork, clone the fork URL instead. Open a PR in GitHub with base
+`valeriia73438/First-Java-CRUD:main` and compare the partner's feature branch.
+Use the title **Add Clear form button to student editor**.
+
+## Owner: review and merge
+
+Do these steps personally, while signed in as valeriia73438:
+
+- Read the Files changed tab and confirm the partner authored the work.
+- Run the branch locally and complete the acceptance checks above.
+- Review the test output and leave your actual review on GitHub.
+- Use **Create a merge commit** to preserve the partner's original commit in main.
+- Do not enable automatic merging. Do not squash the partner's work into an owner-authored commit.
+
+After merging:
+
+```sh
+git switch main
+git pull --ff-only origin main
+git log --format='%h %an <%ae> %s' --all
+```
+
+On GitHub open the main branch commit history. Click each student's commit and check
+that GitHub links its author to the expected account. Both commits must be reachable
+from main. Save a real screenshot as `doc/07-github-both-contributors.png` only after
+both students' work is visible, then commit and push the evidence as the owner.
+A local author name or the Contributors summary alone does not complete this check.
+
+## Owner contribution to the partner repository
+
+The surrounding workspace points to `73952id/13.10-teamproj-2nd-lab`, but the partner
+must confirm this is the repository intended for the reciprocal assignment.
+Agree a small task (for example, correct and test the README run instructions).
+The owner should fork/clone that repository, create `codex/improve-run-instructions`,
+make a useful change as valeriia73438, test it, and open a PR from their own account.
+Record the real PR URL below once it exists. The partner reviews it in their repository.
+Do not claim this step is done before an actual PR exists.
+
+## Evidence to fill in after real collaboration
+
+- Initial owner push: pending (see VERIFICATION.md).
+- Partner PR URL: pending.
+- Owner review and merge: pending.
+- Both GitHub author links verified on main: pending.
+- Commit-history screenshot: pending.
+- Owner PR to partner repository: pending.
