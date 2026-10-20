@@ -50,7 +50,7 @@ public class StudentView extends VerticalLayout {
         grid.addColumn(Student::getCourse).setHeader("Course").setAutoWidth(true);
         grid.setHeight("320px");
         grid.asSingleSelect().addValueChangeListener(event -> loadForm(event.getValue()));
-        grid.setAccessibleName("Students");
+        grid.getElement().setAttribute("aria-label", "Students");
 
         firstName.setMaxLength(100);
         lastName.setMaxLength(100);
