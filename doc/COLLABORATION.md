@@ -13,7 +13,7 @@ Do not use co-author trailers or change the owner checkout's identity to simulat
 
 ## Task for 73952id: Clear form button
 
-This task is intentionally left unimplemented for the partner.
+The partner's change must be reviewed before it is merged into main.
 
 Add a **Clear form** button beside Save and Delete in `StudentView.java`.
 It must clear all four inputs, deselect any row, switch the heading to Add student,
@@ -32,7 +32,7 @@ Acceptance checks:
 
 The owner can invite 73952id through repository Settings → Collaborators.
 If direct push access is unavailable, the partner should fork the repository in their own account.
-First wait until the owner has pushed the initial application to main.
+Create the feature branch from the latest main.
 
 In the partner's own clone only:
 
@@ -41,6 +41,8 @@ git clone https://github.com/valeriia73438/First-Java-CRUD.git
 cd First-Java-CRUD
 git config --local user.name 73952id
 git config --local user.email mliuten1@stu.vistula.edu.pl
+git switch main
+git pull --ff-only origin main
 git switch -c codex/clear-student-form
 # The partner now implements and checks the task themselves.
 ./mvnw clean test
@@ -79,19 +81,23 @@ A local author name or the Contributors summary alone does not complete this che
 
 ## Owner contribution to the partner repository
 
-The surrounding workspace points to `73952id/13.10-teamproj-2nd-lab`, but the partner
-must confirm this is the repository intended for the reciprocal assignment.
-Agree a small task (for example, correct and test the README run instructions).
-The owner should fork/clone that repository, create `codex/improve-run-instructions`,
-make a useful change as valeriia73438, test it, and open a PR from their own account.
-Record the real PR URL below once it exists. The partner reviews it in their repository.
-Do not claim this step is done before an actual PR exists.
+Partner repository: [73952id/First-Java-CRUD](https://github.com/73952id/First-Java-CRUD).
+This is a separate Java console application.
 
-## Evidence to fill in after real collaboration
+The owner's contribution is [PR #1: Add exit confirmation to customer manager](https://github.com/73952id/First-Java-CRUD/pull/1),
+authored by `valeriia73438`. It adds confirmation before exiting and documents the behavior.
+GitHub confirms that this PR was **merged on 20 October 2026**.
+
+## Collaboration status
+
+Checked on GitHub on 20 October 2026:
 
 - Initial owner push: complete; GitHub links the initial commits to valeriia73438.
-- Partner PR URL: pending.
-- Owner review and merge: pending.
-- Both GitHub author links verified on main: pending.
+- Incoming partner PR: [PR #1: Add Clear form button to student editor](https://github.com/valeriia73438/First-Java-CRUD/pull/1),
+  authored by `73952id`; merged by `valeriia73438` on 20 October 2026.
+- Owner merge: complete. No formal GitHub PR review is recorded; this does not verify
+  whether the owner performed the manual review checks above.
+- Both GitHub author links verified on main: complete; GitHub links the initial owner
+  commits to `valeriia73438` and the Clear form commit to `73952id`.
 - Commit-history screenshot: pending.
-- Owner PR to partner repository: pending.
+- Owner PR to partner repository: complete; the exit confirmation PR linked above is merged.

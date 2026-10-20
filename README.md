@@ -63,7 +63,7 @@ doc/                            Evidence and collaboration instructions
 
 Owner: **valeriia73438**. Partner: **73952id**.
 See [COLLABORATION.md](doc/COLLABORATION.md) for the partner task, branch and PR commands,
-owner review checklist, and reciprocal contribution instructions.
+owner review checklist, and current collaboration status.
 The partner must make their own change and commit it using their own account.
 Their work is not included in the initial implementation.
 
