@@ -31,6 +31,9 @@ Vaadin may download Node.js and prepare its frontend on first startup.
 - **Create:** click **Add Student**, enter all four fields, then **Save**.
 - **Update:** select a row, change its fields, then **Save**.
 - **Delete:** select a row, click **Delete**, and confirm. Cancel keeps the record.
+- **Clear form:** discard unsaved input, deselect the current row, and return to
+  **Add student** mode. Saved records remain unchanged; Delete is disabled until
+  another student is selected.
 - Blank fields and invalid email addresses show validation errors. Successful changes show notifications.
 
 Three example students are added when the database is empty. Records are stored in `data/students.mv.db`
